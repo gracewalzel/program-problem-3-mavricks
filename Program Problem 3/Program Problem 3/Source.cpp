@@ -17,6 +17,8 @@ void pause() {
 }
 
 void main() {
+	
+	for(int i=0;i<30;i++){
 	int user_numb;
 	int first_digit;
 	int second_digit;
@@ -29,22 +31,22 @@ void main() {
 	second_digit = (user_numb / 10) % 10;
 	first_digit = user_numb / 100;
 
-	if (first_digit > second_digit && second_digit > third_digit) {
+	if (first_digit > second_digit && second_digit > third_digit) { //check to see if descending
 		cout << "The number is in Descending order.";
 		}
 
-	else if (first_digit < second_digit && second_digit < third_digit) {
+	else if (first_digit < second_digit && second_digit < third_digit) { //check to see if ascending
 		cout << "The number is in Ascending order.";
 	}
 
-	else {
+	else { //check to see if neither
 		cout << "The number is neither in Ascending or Descending order.";
 	}
 
 	pause();
-
+	}
 }
- 
 
+ 
 
 
